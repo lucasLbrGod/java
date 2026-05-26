@@ -6,14 +6,14 @@ public class estudos{
         String nome = "lucas";
         int aulas = 4;
 
-        String mensagem = """ 
-                Olá, %s!
-                Boas vindas ao curso de Java.
-                Teremos %d aulas para te mostrar o que é preciso para você dar o seu primeiro mergulho na linguagem!
-                """.formatted(nome, aulas); // %d indica um valor inteiro 
+        String mensagem = String.format(
+                "Olá, %s!" +
+                "Boas vindas ao curso de Java." +
+                "Teremos %d aulas para te mostrar o que é preciso para você dar o seu primeiro mergulho na linguagem!",
+                nome, aulas);
+                // %d indica um valor inteiro 
                 // %s indica que uma String será inserida 
                 // %f indica um valor de ponto flutuante. se tiver %2F 2 casas decimais e assim adiante
-            Sistem.out.println(mensagem);
-    
+            System.out.println(mensagem);
     }
 }
