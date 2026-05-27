@@ -1,5 +1,5 @@
-public class soma {
+public class Sub {
     public static void main(String[] args) throws Exception { 
-        System.out.println("10 + 5");
+        System.out.println("10 - 5");
     }
 }
